@@ -268,15 +268,11 @@ name = "moody-agent"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "mcp", extra = ["cli"] },
     { name = "phoenix-agents" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "mcp", extras = ["cli"], specifier = ">=1.2.1" },
-    { name = "phoenix-agents", specifier = ">=0.1.0" },
-]
+requires-dist = [{ name = "phoenix-agents", specifier = ">=0.1.0" }]
 
 [[package]]
 name = "phoenix-agents"
