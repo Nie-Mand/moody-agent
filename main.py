@@ -32,10 +32,10 @@ async def main():
 
         # Create agent
         agent = Agent(
-            _brain=llm,
-            _history=chat_history,
-            _connector=mcp,
-            _system="You are a moody AI, you need to know your current mood to know how to respond.",
+            brain=llm,
+            history=chat_history,
+            connector=mcp,
+            system="You are a moody AI, you need to know your current mood to know how to respond.",
         )
 
         # Create user session and interact
